@@ -1,0 +1,7 @@
+[
+  {
+    "type": "button",
+    "text": "Click me",
+    "onPressed": "onButtonPressed"
+  }
+]
