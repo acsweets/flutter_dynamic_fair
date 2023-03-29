@@ -1,6 +1,5 @@
 # dynamic_fair
-
-A new Flutter project.
+一个关于使用fair https://github.com/wuba/fair  的示例demo
 
 ## Getting Started
 
