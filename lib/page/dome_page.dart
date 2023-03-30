@@ -1,8 +1,10 @@
 
 import 'package:flutter/material.dart';
 
+import 'analyze_json.dart';
 import 'custom_page.dart';
 import 'fair_detail_page.dart';
+import 'form_page.dart';
 import 'json_widght.dart';
 
 class DomePage extends StatefulWidget {
@@ -49,6 +51,28 @@ class _DomePageState extends State<DomePage> {
                 );
               }
           ),
+          TextButton(
+              child: Text("表单页面"),
+              onPressed: () async {
+/*                String jsonString =
+                await DefaultAssetBundle.of(context).loadString('assets/widget.json');*/
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FromPage()),
+                );
+              }
+          ),
+
+          TextButton(
+            child: Text("通过json生成的页面"),
+            onPressed: () async {
+              String jsonString =
+              await DefaultAssetBundle.of(context).loadString('assets/config.json');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JsonFormPage(json: jsonString,)),
+              );
+            }),
           Container(
             height: 200,
             width: 200,

@@ -12,8 +12,8 @@ class CustomWidget extends StatelessWidget {
         return Text(
           config['text'],
           style: TextStyle(
-            color: Color(int.parse(config['style']['color'], radix: 16)),
-            fontSize: config['style']['fontSize'],
+            color: Color(int.parse(config['style']['color'])),
+            fontSize: double.parse(config['style']['fontSize']),
           ),
         );
       case 'button':

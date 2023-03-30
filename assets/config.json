@@ -1,7 +1,25 @@
 [
-  {
+  { "title": "万里长征第一步",
     "type": "button",
     "text": "Click me",
-    "onPressed": "onButtonPressed"
+    "onPressed": "onButtonPressed",
+    "color": "black"
+  },
+  {
+    "title": "万里长征第二步",
+    "type": "button",
+    "text": "点点点",
+    "onPressed": "onButtonPressed",
+    "color": "black"
+  },
+  {
+    "title": "文本是",
+    "type": "text",
+    "text": "文本的作用就是diss王浩",
+    "onPressed": "onButtonPressed",
+    "style": {
+      "color": "0xff586247",
+      "fontSize": "16"
+    }
   }
 ]
