@@ -16,6 +16,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   build_runner: ^2.3.3
   fair_compiler: ^1.6.0
+  image_picker: ^0.8.7
 
 dev_dependencies:
   flutter_test:

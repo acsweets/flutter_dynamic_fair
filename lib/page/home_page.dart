@@ -4,9 +4,7 @@ import 'package:dynamic_fair/page/dome_page.dart';
 import 'package:dynamic_fair/page/dynamic_page.dart';
 import 'package:flutter/material.dart';
 
-import 'custom_page.dart';
 import 'fair_detail_page.dart';
-import 'json_widght.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,16 +17,16 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _children = [
-    DynamicPage(),
+    DynamicPage(fairProps: {'auth': 'Internal Team', 'title': 'dynamic page show'}),
     DomePage(),
   ];
-
 
   void onTabTapped(int index) {
     setState(() {
       _currentIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,4 +48,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-

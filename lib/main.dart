@@ -7,7 +7,9 @@ import 'package:flutter/material.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   FairApp.runApplication(
+
       FairApp(
+        debugShowFairBanner:false,
         delegate: const {
         },
         modules: const {

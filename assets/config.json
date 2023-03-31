@@ -15,7 +15,7 @@
   {
     "title": "文本是",
     "type": "text",
-    "text": "文本的作用就是diss王浩",
+    "text": "文本的作用就是",
     "onPressed": "onButtonPressed",
     "style": {
       "color": "0xff586247",
